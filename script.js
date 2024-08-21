@@ -29,6 +29,7 @@ function clearing() {
   buttons.forEach(button => {
     button.disabled = false;
   });
+  document.getElementById('equalto').disabled = true;
 }
 
 function equalto() {
@@ -61,4 +62,5 @@ function equalto() {
   buttons.forEach(button => {
     button.disabled = false;
   });
+  document.getElementById('equalto').disabled = true;
 }
