@@ -15,36 +15,43 @@
 <body>
 
 
-  <main>
+  <main> <!-- 19.5:9 -->
     <div id="calculator-outer">
       <div id="display">
-        <input id="input" type="text">
+        <div>
+          <input type="text" id="previous-numbers">
+        </div>
+        <div>
+          <input id="input" type="text">
+        </div>
       </div>
       <div id="buttons">
+        <button onclick="clearing()" class="calc-button light-grey">C</button>
+        <button onclick="plusminus()" class="calc-button plus-minus light-grey">+/-</button>
+        <button onclick="operator_clicked('%')" class="calc-button op-btn light-grey">%</button>
+        <button onclick="operator_clicked('/')" class="calc-button op-btn yellow">/</button>
+        <button onclick="numberclicked(7)" class="calc-button grey">7</button>
+        <button onclick="numberclicked(8)" class="calc-button grey">8</button>
+        <button onclick="numberclicked(9)" class="calc-button grey">9</button>
+        <button onclick="operator_clicked('*')" class="calc-button op-btn yellow">x</button>
 
-        <button onclick="numberclicked(1)" class="calc-button">1</button>
-        <button onclick="numberclicked(2)" class="calc-button">2</button>
-        <button onclick="numberclicked(3)" class="calc-button">3</button>
-        <button onclick="operator_clicked('+')" class="calc-button op-btn">+</button>
-        <button onclick="numberclicked(4)" class="calc-button">4</button>
-        <button onclick="numberclicked(5)" class="calc-button">5</button>
-        <button onclick="numberclicked(6)" class="calc-button">6</button>
-        <button onclick="operator_clicked('-')" class="calc-button op-btn">-</button>
-        <button onclick="numberclicked(7)" class="calc-button">7</button>
-        <button onclick="numberclicked(8)" class="calc-button">8</button>
-        <button onclick="numberclicked(9)" class="calc-button">9</button>
-        <button onclick="operator_clicked('*')" class="calc-button op-btn">*</button>
-        <button onclick="numberclicked(0)" class="calc-button">0</button>
-        <button onclick="operator_clicked('%')" class="calc-button op-btn">%</button>
-        <button onclick="operator_clicked('^')" class="calc-button op-btn">^</button>
-        <button onclick="operator_clicked('/')" class="calc-button op-btn">/</button>
-        <button onclick="clearing()" class="calc-button">Clr</button>
-        <button onclick="equalto()" class="calc-button" id="equalto" disabled>=</button>
+        <button onclick="numberclicked(4)" class="calc-button grey">4</button>
+        <button onclick="numberclicked(5)" class="calc-button grey">5</button>
+        <button onclick="numberclicked(6)" class="calc-button grey">6</button>
+        <button onclick="operator_clicked('-')" class="calc-button op-btn yellow">-</button>
+        <button onclick="numberclicked(1)" class="calc-button grey">1</button>
+        <button onclick="numberclicked(2)" class="calc-button grey">2</button>
+        <button onclick="numberclicked(3)" class="calc-button grey">3</button>
+        <button onclick="operator_clicked('+')" class="calc-button op-btn yellow">+</button>
+        <button onclick="numberclicked(0)" class="zero-hai-ye-button calc-button grey">0</button>
+        <button onclick="numberclicked('.')" class="calc-button grey">.</button>
+
+        <button onclick="equalto()" class="calc-button yellow" id="equalto">=</button>
       </div>
     </div>
   </main>
 
-  <footer>
+  <!-- <footer>
     <hr />
     <p style="margin: 0;">Connect with me:</p>
     <p style="margin: 5px 0;">
@@ -62,7 +69,7 @@
       </a>
     </p>
     <p style="margin: 0;">&copy; 2024 Jayraje Shinde</p>
-  </footer>
+  </footer> -->
   <script src="script.js"></script>
 </body>
 
