@@ -51,7 +51,7 @@ function equalto() {
     sum = Number(main_array[0]) ** Number(main_array[2]);
   }
   if (main_array[1] == "%") {
-    sum = Number(main_array[0]) % Number(main_array[2]);
+    sum = Number(main_array[0]) + (Number(main_array[0]) * Number(main_array[2])/100);
   }
 
   document.getElementById('input').value = sum;
